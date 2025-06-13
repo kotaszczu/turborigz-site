@@ -6,49 +6,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TurboRigz | Gaming PCs</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    h2, nav a { font-family: 'Anton', sans-serif; }
+  </style>
 </head>
-<body class="bg-black text-white font-sans">
-  <header class="bg-gray-900 p-6 flex items-center justify-between">
-    <img src="assets/logo.png" alt="TurboRigz logo" class="h-12" />
-    <nav class="space-x-4">
-      <a href="#home" class="hover:text-yellow-400">Home</a>
-      <a href="#about" class="hover:text-yellow-400">About</a>
-      <a href="#services" class="hover:text-yellow-400">Services</a>
-      <a href="#contact" class="hover:text-yellow-400">Contact</a>
+<body class="bg-black text-white">
+
+  <!-- Header -->
+  <header class="bg-black fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 border-b border-gray-800 shadow-md">
+    <img src="assets/logo.png" alt="TurboRigz Logo" class="h-10" />
+    <nav class="space-x-6 text-lg">
+      <a href="#home" class="hover:text-yellow-400 hover:underline transition">Home</a>
+      <a href="#about" class="hover:text-yellow-400 hover:underline transition">About Us</a>
+      <a href="#services" class="hover:text-yellow-400 hover:underline transition">Services</a>
+      <a href="#contact" class="hover:text-yellow-400 hover:underline transition">Contact</a>
     </nav>
   </header>
 
-  <section id="home" class="p-10 text-center">
-    <h1 class="text-4xl md:text-6xl font-bold mb-4">TurboRigz</h1>
-    <p class="text-xl text-yellow-400">Power Up Your Game. Dominate Every Frame.</p>
+  <!-- Home -->
+  <section id="home" class="pt-28">
+    <img src="assets/home.png" alt="Home Image" class="w-full max-h-[1500px] object-cover">
   </section>
 
-  <section id="about" class="p-10 bg-gray-800">
-    <h2 class="text-3xl font-bold mb-4">About Us</h2>
-    <p>
-      At TurboRigz, we specialize in building high-performance gaming PCs tailored for gamers and enthusiasts.
-      We sell exclusively through eBay and focus on delivering elite gaming experiences at unbeatable value.
-    </p>
+  <!-- About Us -->
+  <section id="about" class="bg-gray-900 py-16 px-6 flex flex-col md:flex-row items-center gap-10">
+    <div class="md:w-1/2">
+      <h2 class="text-4xl text-white mb-4">ABOUT US</h2>
+      <p class="text-lg leading-relaxed text-gray-200">
+        TurboRigz is dedicated to building high-performance gaming PCs that elevate your gameplay.
+        With a focus on quality and cutting-edge technology, we deliver machines that meet the
+        demands of serious gamers.
+      </p>
+    </div>
+    <div class="md:w-1/2">
+      <img src="assets/about.jpg" alt="About Us" class="rounded-lg shadow-lg w-full">
+    </div>
   </section>
 
-  <section id="services" class="p-10">
-    <h2 class="text-3xl font-bold mb-4">Our Rigs</h2>
-    <ul class="list-disc ml-5 space-y-2">
-      <li>Custom-built gaming PCs</li>
-      <li>Pre-configured rigs optimized for top titles</li>
-      <li>Hardware tuning and performance testing</li>
-      <li>Fast and secure eBay transactions</li>
-    </ul>
+  <!-- Services -->
+  <section id="services" class="bg-black py-16 px-6 flex flex-col md:flex-row-reverse items-center gap-10">
+    <div class="md:w-1/2">
+      <h2 class="text-4xl text-white mb-4">OUR SERVICES</h2>
+      <ul class="text-lg text-gray-200 space-y-3 list-disc ml-5">
+        <li>Custom-built gaming PCs</li>
+        <li>Optimized rigs for top-tier titles</li>
+        <li>Stress-tested performance tuning</li>
+        <li>Reliable service via eBay</li>
+      </ul>
+    </div>
+    <div class="md:w-1/2">
+      <img src="assets/services.jpg" alt="Services" class="rounded-lg shadow-lg w-full">
+    </div>
   </section>
 
-  <section id="contact" class="p-10 bg-gray-800">
-    <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
-    <p>Email us at: <a href="mailto:enquiries@turborigz.co.uk" class="text-yellow-400">enquiries@turborigz.co.uk</a></p>
-    <p class="mt-2 text-sm text-gray-400">We typically respond within 24 hours.</p>
+  <!-- Contact -->
+  <section id="contact" class="bg-gray-900 py-16 px-6 flex flex-col md:flex-row items-center gap-10">
+    <div class="md:w-1/2">
+      <h2 class="text-4xl text-white mb-4">CONTACT</h2>
+      <p class="text-lg leading-relaxed text-gray-200 mb-4">
+        Reach out to us at <a href="mailto:enquiries@turborigz.co.uk" class="text-yellow-400 hover:underline">enquiries@turborigz.co.uk</a>
+        for sales, support, or collaboration.
+      </p>
+      <a href="mailto:enquiries@turborigz.co.uk" class="inline-block mt-2 px-6 py-3 bg-yellow-400 text-black font-bold rounded hover:bg-yellow-300 transition">Get in Touch</a>
+    </div>
+    <div class="md:w-1/2">
+      <img src="assets/contact.jpg" alt="Contact" class="rounded-lg shadow-lg w-full">
+    </div>
   </section>
 
-  <footer class="text-center p-4 bg-gray-900 text-sm text-gray-500">
+  <footer class="text-center p-6 bg-black text-sm text-gray-500">
     &copy; 2025 TurboRigz. All rights reserved.
   </footer>
+
 </body>
 </html>
